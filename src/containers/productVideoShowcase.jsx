@@ -1,6 +1,9 @@
 import Image from "next/image";
 import ScrollableGallery from "@/components/scrollableGallery";
 import girl from "@/assets/images/girl.png";
+import earphones from "@/assets/images/earphones.png";
+import headsets from "@/assets/images/headsets.png";
+import manWithHeadphones from "@/assets/images/manWithHeadphones.png";
 
 const images = [
   {
@@ -9,17 +12,17 @@ const images = [
     caption: "Some product image will be here",
   },
   {
-    src: girl.src,
+    src: earphones.src,
     alt: "Product 2",
     caption: "Some product image will be here",
   },
   {
-    src: girl.src,
+    src: headsets.src,
     alt: "Product 3",
     caption: "Some product image will be here",
   },
   {
-    src: girl.src,
+    src: manWithHeadphones.src,
     alt: "Product 4",
     caption: "Some feature will be here",
   },

@@ -1,48 +1,29 @@
-"use client";
-
 import Image from "next/image";
-import { useRef, useEffect, useState } from "react";
-import { motion } from "framer-motion";
 
 function ScrollableGallery({ images }) {
-  const scrollRef = useRef(null);
-  const [containerWidth, setContainerWidth] = useState(0);
-
-  useEffect(() => {
-    const updateWidth = () => {
-      if (scrollRef.current) {
-        setContainerWidth(scrollRef.current.offsetWidth);
-      }
-    };
-
-    updateWidth();
-    window.addEventListener("resize", updateWidth);
-    return () => window.removeEventListener("resize", updateWidth);
-  }, []);
-
   return (
-    <div className="container mx-auto relative w-full py-20 overflow-hidden">
+    <div className="container flex justify-end relative w-full py-20 overflow-hidden">
       <div className="-mx-4 overflow-x-auto">
-        <div className="pl-15 flex lg:pl-0">
+        <div className="flex lg:pl-0">
+        <div className="w-[calc(100%/1.5)] lg:w-[calc(100%/3.5)] hidden lg:block  flex-shrink-0 relative"></div>
           {images.map((image, index) => (
             <div
               key={index}
-              className="w-[calc(100%/1.5)] lg:w-[calc(100%/3.5)] px-4 flex-shrink-0"
+              className="w-[calc(100%/1.5)] lg:w-[calc(100%/3.5)] px-4 flex-shrink-0 relative"
             >
               <Image
-                src={image.src}
-                alt={image.alt}
-                width={800}
-                height={800}
+                className="object-contain"
+                src={image.src} 
+                alt={image.alt} 
+                width={800} 
+                height={800} 
+                quality={100}
               />
-              <div className="mt-4 text-center">
-                <p className="text-neutral-800 dark:text-white text-lg md:text-xl font-bold">
-                  {image.title}
-                </p>
-                <p className="text-neutral-600 dark:text-neutral-400 text-sm md:text-base mt-2">
-                  {image.description}
-                </p>
-              </div>
+
+              <p className="absolute bottom-0 pt-10 lg:pt-52 right-2 text-white text-center px-6 py-4 font-bold bg-gradient-to-t from-black to-transparent z-10 text-xs md:text-lg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab non,
+                nam quo cumque commodi.
+              </p>
             </div>
           ))}
         </div>
