@@ -2,10 +2,10 @@ import Image from "next/image";
 
 function ScrollableGallery({ images }) {
   return (
-    <div className="container flex justify-end relative w-full py-20 overflow-hidden">
+    <div className="container ml-auto relative w-full py-20 inset-auto overflow-hidden">
       <div className="-mx-4 overflow-x-auto">
-        <div className="flex lg:pl-0">
-        <div className="w-[calc(100%/1.5)] lg:w-[calc(100%/3.5)] hidden lg:block  flex-shrink-0 relative"></div>
+        <div className="pl-15 flex lg:pl-0">
+        {/* <div className="w-[calc(100%/1.5)] lg:w-[calc(100%/3.5)] px-4 flex-shrink-0 relative"></div> */}
           {images.map((image, index) => (
             <div
               key={index}

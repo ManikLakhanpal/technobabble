@@ -16,7 +16,7 @@ function ContactForm() {
   };
 
   return (
-    <section id="contact" className="py-16 bg-gray-50 min-h-[85vh] max-h-fit">
+    <section className="py-16 bg-gray-50 min-h-[85vh] max-h-fit flex flex-col justify-center">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12">Contact Us</h2>
         <form onSubmit={handleSubmit} className="max-w-2xl mx-auto">

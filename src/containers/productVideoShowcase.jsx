@@ -4,6 +4,7 @@ import girl from "@/assets/images/girl.png";
 import earphones from "@/assets/images/earphones.png";
 import headsets from "@/assets/images/headsets.png";
 import manWithHeadphones from "@/assets/images/manWithHeadphones.png";
+import europe from "@/assets/images/europe.png";
 
 const images = [
   {
@@ -53,29 +54,33 @@ function ProductVideoShowcase() {
       <div className="relative -top-px py-16 bg-gray-50">
         <div className="absolute w-full h-1/2 bg-black top-0"></div>
         <div className="container relative z-10 mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-3xl font-bold mb-4 text-white">
+
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+
+              <h3 className="text-3xl font-black text-white text-center">
                 Video tile will be here
               </h3>
-              <p className="text-gray-600">
-                Product description will be here in one small paragraph. Product
+
+              <p className="text-white text-center mb-4">
+                Product description will be here in one small <span className="text-orange-500"> paragrah </span>. Product
                 description will be here in one small paragraph. Product
                 description
               </p>
             </div>
-            <div className="rounded-lg overflow-hidden">
+            <div className="rounded-lg flex justify-center overflow-hidden pt-10">
               <Image
-                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                src={europe}
                 alt="Video thumbnail"
-                className="w-full h-96 object-cover"
+                className="xl:w-2/4 object-contain rounded-2xl"
                 width={800}
                 height={384}
               />
             </div>
-          </div>
+
         </div>
       </div>
+
+      
     </section>
   );
 }
