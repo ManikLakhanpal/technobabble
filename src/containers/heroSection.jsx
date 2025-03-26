@@ -4,7 +4,7 @@ import LevitatingCard from "../components/levitatingCard";
 
 function HeroPage() {
     return (
-        <section className="pt-24 pb-12 px-4 mx-6 min-h-fit h-[90vh]">
+        <section className="pt-10 md:pt-24 pb-12 px-4 mx-6 min-h-fit h-[90vh]">
             <div className="container mx-auto grid xl:grid-cols-3 gap-8 items-center text-black">
                 {/* Desktop View */}
                 <div className="hidden xl:block lg:col-span-1">
