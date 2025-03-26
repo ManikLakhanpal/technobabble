@@ -2,7 +2,8 @@
 
 import React, { useState } from 'react';
 import { GraduationCap, Phone, Mail, Instagram, Twitter, Facebook } from 'lucide-react';
-import HeroPage from '@/components/heroSection';
+import HeroPage from '@/containers/heroSection';
+import ShowCase from '@/containers/showcase';
 
 function Home() {
   const [formData, setFormData] = useState({
@@ -24,44 +25,7 @@ function Home() {
       <HeroPage />
 
       {/* Why Technoclass Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 text-black">
-          <h2 className="text-4xl font-bold text-center mb-12">Why Technoclass</h2>
-          <h3 className="text-2xl font-semibold text-center mb-8">Think. Create. Innovate.</h3>
-          <p className=" text-center max-w-3xl mx-auto mb-12">
-            Product description will be here in one small paragraph. Product description will be here in one small paragraph.
-            Product description will be here in one small paragraph.
-          </p>
-          
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 text-center">
-            <div>
-              <div className="text-3xl font-bold">105</div>
-              <div className="text-sm text-gray-600">Net Weight</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold">26</div>
-              <div className="text-sm text-gray-600">Top Speed</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold">38</div>
-              <div className="text-sm text-gray-600">Max Range</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold">89</div>
-              <div className="text-sm text-gray-600">Max Torques</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold">22%</div>
-              <div className="text-sm text-gray-600">Hill Climbing</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold">2x</div>
-              <div className="text-sm text-gray-600">Hydraulic Disc Brakes</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ShowCase />
 
       {/* Product Showcase */}
       <section className="py-16">
