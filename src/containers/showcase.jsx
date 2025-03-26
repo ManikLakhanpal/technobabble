@@ -9,8 +9,8 @@ function ShowCase() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50 min-h-[90vh] max-h-fit flex items-center">
-      <div className=" px-4 text-black">
+    <section className="py-16 bg-gray-50 flex items-center">
+      <div className="container mx-auto px-4 text-black">
         <h2 className="text-4xl font-bold text-center mb-12">
           Why Technoclass
         </h2>

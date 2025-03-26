@@ -1,6 +1,4 @@
-import { Phone, Mail, Instagram, Twitter, Facebook } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 import ContactInfo from "./contactInfo";
 
 const links = [
@@ -33,12 +31,6 @@ const links = [
   },
 ];
 
-const socialIcons = [
-  { Icon: Facebook, href: "https://www.facebook.com" },
-  { Icon: Twitter, href: "https://www.twitter.com" },
-  { Icon: Instagram, href: "https://www.instagram.com" },
-];
-
 function Footer() {
   return (
     <footer className="bg-black text-white py-12">
@@ -69,7 +61,7 @@ function Footer() {
           <ContactInfo />
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+        <div className="border-gray-800 mt-8 pt-8 text-center text-sm">
           <p>
             Copyright © 2023 Saaspect. By Saaspect Inc | All rights reserved |
             Privacy Policy | Terms of use
