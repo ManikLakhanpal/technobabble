@@ -39,6 +39,8 @@ function HeroPage() {
                             className="rounded-lg"
                             width={700}
                             height={600}
+                            quality={100}
+                            priority
                         />
 
                         {/* Feature Cards */}
