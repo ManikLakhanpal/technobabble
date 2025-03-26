@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Search } from "lucide-react";
+import { Search, Menu } from "lucide-react";
 
 const links = [
   "Home",
@@ -45,7 +45,7 @@ export default function Navbar() {
         </div>
 
         {/* Center Nav Links Container */}
-        <div className="flex justify-center">
+        <div className="xl:flex justify-center hidden ">
           <div className="hidden md:flex space-x-6 text-black font-medium">
             {links.map((value, key) => (
               <Link key={key} href="#" className="relative group">
@@ -63,7 +63,11 @@ export default function Navbar() {
         </div>
 
         {/* Empty div for flex spacing */}
-        <div className="w-[120px]"></div>
+        <div className="w-[120px] hidden xl:block"></div>
+
+        <button className="text-black hover:text-gray-600  lg:block xl:hidden">
+          <Menu />
+        </button>
       </div>
     </nav>
   );
