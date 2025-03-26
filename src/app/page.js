@@ -1,9 +1,10 @@
 "use client"
 
 import React, { useState } from 'react';
-import { GraduationCap, Phone, Mail, Instagram, Twitter, Facebook } from 'lucide-react';
 import HeroPage from '@/containers/heroSection';
 import ShowCase from '@/containers/showcase';
+import Footer from '@/components/footer';
+import Testimonials from '@/containers/testimonialSection';
 
 function Home() {
   const [formData, setFormData] = useState({
@@ -98,23 +99,7 @@ function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12">Testimonials</h2>
-          <div className="max-w-2xl mx-auto text-center">
-            <img 
-              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80"
-              alt="Yung lee"
-              className="w-20 h-20 rounded-full mx-auto mb-4"
-            />
-            <h4 className="text-xl font-semibold mb-4">Yung lee</h4>
-            <p className="text-gray-600">
-              Product description will be here in one small paragraph. Product description will be here in one small paragraph.
-              Product description will be here in one small paragraph. Product description.
-            </p>
-          </div>
-        </div>
-      </section>
+      <Testimonials />
 
       {/* Contact Form */}
       <section id="contact" className="py-16 bg-gray-50">
@@ -181,58 +166,7 @@ function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <GraduationCap className="h-8 w-8 mb-4" />
-              <div className="flex items-center mb-2">
-                <Mail className="h-4 w-4 mr-2" />
-                <span>Hello@techcompany.co</span>
-              </div>
-              <div className="flex items-center mb-4">
-                <Phone className="h-4 w-4 mr-2" />
-                <span>+91-157-256-4862</span>
-              </div>
-              <div className="flex space-x-4">
-                <Facebook className="h-5 w-5" />
-                <Twitter className="h-5 w-5" />
-                <Instagram className="h-5 w-5" />
-              </div>
-            </div>
-            <div>
-              <h4 className="text-orange-500 font-semibold mb-4">Navigate</h4>
-              <ul className="space-y-2">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#blog">Blog</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-orange-500 font-semibold mb-4">Categories</h4>
-              <ul className="space-y-2">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#blog">Blog</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-orange-500 font-semibold mb-4">Features</h4>
-              <ul className="space-y-2">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#blog">Blog</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
-            <p>Copyright © 2023 Stackblitz by Stackblitz Inc | All rights reserved | Privacy Policy | Terms of Use</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
