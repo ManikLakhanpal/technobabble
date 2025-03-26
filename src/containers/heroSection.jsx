@@ -1,5 +1,4 @@
 import Image from "next/image";
-import iPadPro from "@/assets/images/ipadPro.png";
 import LevitatingCard from "../components/levitatingCard";
 
 function HeroPage() {
@@ -36,7 +35,7 @@ function HeroPage() {
           {/* Image Section */}
           <div className="relative">
             <Image
-              src={iPadPro}
+              src="/assets/images/ipadPro.png"
               alt="Technology"
               className="rounded-lg"
               width={700}

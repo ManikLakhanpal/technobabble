@@ -1,39 +1,34 @@
 import Image from "next/image";
 import ScrollableGallery from "@/components/scrollableGallery";
-import girl from "@/assets/images/girl.png";
-import earphones from "@/assets/images/earphones.png";
-import headsets from "@/assets/images/headsets.png";
-import manWithHeadphones from "@/assets/images/manWithHeadphones.png";
-import europe from "@/assets/images/europe.png";
 
 const images = [
   {
-    src: girl.src,
+    src: "/assets/images/girl.png",
     alt: "Product 1",
     caption: "Some product image will be here",
   },
   {
-    src: earphones.src,
+    src: "/assets/images/earphones.png",
     alt: "Product 2",
     caption: "Some product image will be here",
   },
   {
-    src: headsets.src,
+    src: "/assets/images/headsets.png",
     alt: "Product 3",
     caption: "Some product image will be here",
   },
   {
-    src: manWithHeadphones.src,
+    src: "/assets/images/manWithHeadphones.png",
     alt: "Product 4",
     caption: "Some feature will be here",
   },
   {
-    src: girl.src,
+    src: "/assets/images/girl.png",
     alt: "Product 4",
     caption: "Some feature will be here",
   },
   {
-    src: girl.src,
+    src: "/assets/images/girl.png",
     alt: "Product 4",
     caption: "Some feature will be here",
   },
@@ -69,7 +64,7 @@ function ProductVideoShowcase() {
             </div>
             <div className="rounded-lg flex justify-center overflow-hidden pt-10">
               <Image
-                src={europe}
+                src="/assets/images/europe.png"
                 alt="Video thumbnail"
                 className="xl:w-2/4 object-contain rounded-2xl"
                 width={800}
