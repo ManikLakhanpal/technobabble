@@ -35,7 +35,7 @@ function HeroPage() {
           {/* Image Section */}
           <div className="relative">
             <Image
-              src="/assets/images/ipadPro.png"
+              src="https://res.cloudinary.com/dlrmoxysy/image/upload/v1743058489/q03nz6eskvue1qzuxexc.png"
               alt="Technology"
               className="rounded-lg"
               width={700}
