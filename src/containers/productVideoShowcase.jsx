@@ -56,7 +56,7 @@ function ProductVideoShowcase() {
                 Video tile will be here
               </h3>
 
-              <p className="text-white mb-4 mx-32">
+              <p className="text-white mb-4 xl:mx-32">
                 Product description will be here in one small <span className="text-orange-500"> paragrah </span>. Product
                 description will be here in one small paragraph. Product
                 description
