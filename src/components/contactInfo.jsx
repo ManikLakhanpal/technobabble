@@ -47,6 +47,7 @@ function ContactInfo() {
           alt="Next.js logo"
           width={100}
           height={30}
+          quality={100}
           priority
         />
       </div>

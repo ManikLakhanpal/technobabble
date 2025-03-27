@@ -35,28 +35,30 @@ function Footer() {
   return (
     <footer className="bg-black text-white py-12">
       <div className="container mx-auto">
-        <div className="grid grid-cols-3 md:grid-cols-4 gap-5">
-
+        <div className="grid grid-cols-2  gap-5">
           <div className="hidden md:block">
             <ContactInfo />
           </div>
 
-          {links.map((link, index) => (
-            <div key={index}>
-              <h4 className="text-orange-500 font-semibold mb-4">
-                {link.title}
-              </h4>
-              <ul className="space-y-2">
-                {link.items.map((item, idx) => (
-                  <li key={idx}>
-                    <Link href={item.link}>{item.value}</Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <div className="grid grid-cols-3">
+            {links.map((link, index) => (
+              <div key={index}>
+                <h4 className="text-orange-500 font-semibold mb-4">
+                  {link.title}
+                </h4>
+                <ul className="space-y-2">
+                  {link.items.map((item, idx) => (
+                    <li key={idx}>
+                      <Link href={item.link}>{item.value}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
-        
+
+        {/* MOBILE  */}
         <div className="md:hidden block pt-10">
           <ContactInfo />
         </div>

@@ -12,7 +12,7 @@ function ScrollableGallery({ images }) {
               className="w-[calc(100%/1.5)] lg:w-[calc(100%/3.5)] px-4 flex-shrink-0 relative"
             >
               <Image
-                className="object-contain"
+                className="object-contain rounded-4xl border/0"
                 src={image.src} 
                 alt={image.alt} 
                 width={800} 

@@ -31,7 +31,7 @@ function ShowCase() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 sm:mx-10 gap-4 text-center">
           {stats.map((stat, index) => (
             <div
-              className="border-2 border-gray-500 rounded-md border-opacity-50 p-10"
+              className="border border-gray-500/20 rounded-md border/50 p-10"
               key={index}
             >
               <div>
